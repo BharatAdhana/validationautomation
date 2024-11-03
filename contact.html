@@ -11,36 +11,40 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- AOS CSS for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
+<body class="dark-theme">
+    <!-- Enabled Dark Mode by Default -->
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
                 <a href="index.html">
                     <!-- Light Mode Logo (Black) -->
-                    <img src="https://s2spixel.com/assets/images/logo.png" alt="S2SPixel Logo" class="logo-light" aria-hidden="false">
+                    <img src="https://s2spixel.com/assets/images/logo.png" alt="S2SPixel Logo" class="logo-light" aria-hidden="true">
                     <!-- Dark Mode Logo (White) -->
-                    <img src="S2SPixel-logo-white.png" alt="S2SPixel Logo" class="logo-dark" aria-hidden="true">
+                    <img src="S2SPixel-logo-white.png" alt="S2SPixel Logo" class="logo-dark" aria-hidden="false">
                 </a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#demo">Demo</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="nav-links" data-aos="fade-down" data-aos-delay="300">
+                <!-- Added AOS Animation -->
+                <li><a href="#features" data-aos="fade-down" data-aos-delay="400">Features</a></li>
+                <li><a href="#benefits" data-aos="fade-down" data-aos-delay="500">Benefits</a></li>
+                <li><a href="#how-it-works" data-aos="fade-down" data-aos-delay="600">How It Works</a></li>
+                <li><a href="#demo" data-aos="fade-down" data-aos-delay="700">Demo</a></li>
+                <li><a href="#testimonials" data-aos="fade-down" data-aos-delay="800">Testimonials</a></li>
+                <li><a href="#pricing" data-aos="fade-down" data-aos-delay="900">Pricing</a></li>
+                <li><a href="#faq" data-aos="fade-down" data-aos-delay="1000">FAQ</a></li>
+                <li><a href="contact.html" data-aos="fade-down" data-aos-delay="1100">Contact</a></li>
             </ul>
 
             <!-- Theme Toggle Button -->
             <label id="theme-toggle-button" aria-label="Toggle Dark Mode">
-                <input type="checkbox" id="toggle">
+                <input type="checkbox" id="toggle" checked> <!-- Checked by Default -->
                 <svg viewBox="0 0 69.667 44" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(3.5 3.5)" data-name="Component 15 – 1" id="Component_15_1">
                         <!-- Container -->
@@ -96,29 +100,34 @@
                 </svg>
             </label>
 
-            <div class="hamburger">
+            <div class="hamburger" data-aos="fade-down" data-aos-delay="1200">
+                <!-- Added AOS Animation -->
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
-
     <!-- Contact Us Main Content -->
-    <section class="contact-page" id="contact-page">
+    <section class="contact-page" id="contact-page" data-aos="fade-up">
+        <!-- Added AOS Animation -->
         <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-content">
-                <div class="contact-info">
+            <h2 data-aos="fade-up" data-aos-delay="100">Contact Us</h2> <!-- Added AOS Animation -->
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+                <!-- Added AOS Animation -->
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="300">
+                    <!-- Added AOS Animation -->
                     <p><strong>Email:</strong> support@s2spixel.com</p>
                     <p><strong>Phone:</strong> +91 9891172772</p>
                     <p><strong>Address:</strong> Sector 15A, Faridabad, India</p>
                 </div>
-                <div class="contact-form-container">
+                <div class="contact-form-container" data-aos="fade-left" data-aos-delay="400">
+                    <!-- Added AOS Animation -->
                     <form id="contact-form">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="cta-button">
+                        <input type="text" name="name" placeholder="Your Name" required data-aos="fade-up" data-aos-delay="500"> <!-- Added AOS Animation -->
+                        <input type="email" name="email" placeholder="Your Email" required data-aos="fade-up" data-aos-delay="600"> <!-- Added AOS Animation -->
+                        <textarea name="message" rows="5" placeholder="Your Message" required data-aos="fade-up" data-aos-delay="700"></textarea> <!-- Added AOS Animation -->
+                        <button type="submit" class="cta-button" data-aos="fade-up" data-aos-delay="800">
+                            <!-- Added AOS Animation -->
                             <div class="svg-wrapper-1">
                                 <div class="svg-wrapper">
                                     <svg xmlns="http://www.w3.org/2000/svg"
@@ -134,51 +143,100 @@
                             <span>Send</span>
                         </button>
                     </form>
-                    <p id="contact-message"></p>
+                    <p id="contact-message" data-aos="fade-up" data-aos-delay="900"></p> <!-- Added AOS Animation -->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
+        <!-- Added AOS Animation -->
         <div class="container footer-content">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
                 <h4>Contact Us</h4>
                 <p>Email: support@s2spixel.com</p>
                 <p>Phone: +91 9891172772</p>
                 <p>Address: Sector 15A, Faridabad, India</p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
                 <h4>Follow Us</h4>
                 <div class="social-media">
-                    <a href="https://www.linkedin.com/company/s2spixel/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/people/s2spixel/100086972582627/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com/s2spixel" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/s2spixel" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/s2spixel/" target="_blank" aria-label="LinkedIn" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/people/s2spixel/100086972582627/" target="_blank" aria-label="Facebook" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/s2spixel" target="_blank" aria-label="Twitter" data-aos="fade-up" data-aos-delay="500"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/s2spixel" target="_blank" aria-label="Instagram" data-aos="fade-up" data-aos-delay="600"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="700">
                 <h4>Quick Links</h4>
                 <div class="quick-links">
-                    <a href="index.html#features">Features</a>
-                    <a href="index.html#benefits">Benefits</a>
-                    <a href="index.html#how-it-works">How It Works</a>
-                    <a href="index.html#demo">Demo</a>
-                    <a href="index.html#testimonials">Testimonials</a>
-                    <a href="index.html#pricing">Pricing</a>
-                    <a href="index.html#faq">FAQ</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="index.html#features" data-aos="fade-up" data-aos-delay="800">Features</a>
+                    <a href="index.html#benefits" data-aos="fade-up" data-aos-delay="900">Benefits</a>
+                    <a href="index.html#how-it-works" data-aos="fade-up" data-aos-delay="1000">How It Works</a>
+                    <a href="index.html#demo" data-aos="fade-up" data-aos-delay="1100">Demo</a>
+                    <a href="index.html#testimonials" data-aos="fade-up" data-aos-delay="1200">Testimonials</a>
+                    <a href="index.html#pricing" data-aos="fade-up" data-aos-delay="1300">Pricing</a>
+                    <a href="index.html#faq" data-aos="fade-up" data-aos-delay="1400">FAQ</a>
+                    <a href="contact.html" data-aos="fade-up" data-aos-delay="1500">Contact</a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom" data-aos="fade-up" data-aos-delay="1600">
+            <!-- Added AOS Animation -->
             <p>&copy; 2024 S2SPixel. All rights reserved.</p>
-            <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a></p>
+            <p><a href="#privacy-policy" data-aos="fade-up" data-aos-delay="1700">Privacy Policy</a> | <a href="#terms-of-service" data-aos="fade-up" data-aos-delay="1800">Terms of Service</a></p>
         </div>
     </footer>
 
+    <!-- GSAP JS (Optional for Additional Animations) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- AOS JS for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Vanta.js for Mouse Animations (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.waves.min.js"></script>
+
     <!-- JavaScript File -->
     <script src="scripts.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration in ms
+            once: true,     // Whether animation should happen only once
+            easing: 'ease-in-out', // Easing function
+        });
+    </script>
+
+    <!-- Contact Form Submission Handling -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = e.target.name.value.trim();
+            const email = e.target.email.value.trim();
+            const message = e.target.message.value.trim();
+
+            // Simple validation
+            if (name === '' || email === '' || message === '') {
+                document.getElementById('contact-message').textContent = 'Please fill in all fields.';
+                document.getElementById('contact-message').style.color = 'red';
+                return;
+            }
+
+            // Here you can add AJAX or Fetch API to submit the form data to your server
+            // For demonstration, we'll just display a success message
+
+            document.getElementById('contact-message').textContent = 'Thank you for contacting us! We will get back to you soon.';
+            document.getElementById('contact-message').style.color = 'green';
+
+            // Reset the form
+            e.target.reset();
+        });
+    </script>
 </body>
 </html>

@@ -17,7 +17,7 @@
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dark-theme">
 
     <!-- Navbar -->
     <nav class="navbar">
@@ -25,25 +25,25 @@
             <div class="logo">
                 <a href="index.html">
                     <!-- Light Mode Logo (Black) -->
-                    <img src="https://s2spixel.com/assets/images/logo.png" alt="S2SPixel Logo" class="logo-light" aria-hidden="false">
+                    <img src="https://s2spixel.com/assets/images/logo.png" alt="S2SPixel Logo" class="logo-light" aria-hidden="true">
                     <!-- Dark Mode Logo (White) -->
-                    <img src="S2SPixel-logo-white.png" alt="S2SPixel Logo" class="logo-dark" aria-hidden="true">
+                    <img src="S2SPixel-logo-white.png" alt="S2SPixel Logo" class="logo-dark" aria-hidden="false">
                 </a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#demo">Demo</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="nav-links" data-aos="fade-down" data-aos-delay="300">
+                <li><a href="#features" data-aos="fade-down" data-aos-delay="400">Features</a></li>
+                <li><a href="#benefits" data-aos="fade-down" data-aos-delay="500">Benefits</a></li>
+                <li><a href="#how-it-works" data-aos="fade-down" data-aos-delay="600">How It Works</a></li>
+                <li><a href="#demo" data-aos="fade-down" data-aos-delay="700">Demo</a></li>
+                <li><a href="#testimonials" data-aos="fade-down" data-aos-delay="800">Testimonials</a></li>
+                <li><a href="#pricing" data-aos="fade-down" data-aos-delay="900">Pricing</a></li>
+                <li><a href="#faq" data-aos="fade-down" data-aos-delay="1000">FAQ</a></li>
+                <li><a href="contact.html" data-aos="fade-down" data-aos-delay="1100">Contact</a></li>
             </ul>
 
             <!-- Theme Toggle Button -->
             <label id="theme-toggle-button" aria-label="Toggle Dark Mode">
-                <input type="checkbox" id="toggle">
+                <input type="checkbox" id="toggle" checked>
                 <svg viewBox="0 0 69.667 44" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(3.5 3.5)" data-name="Component 15 – 1" id="Component_15_1">
                         <!-- Container -->
@@ -99,7 +99,7 @@
                 </svg>
             </label>
 
-            <div class="hamburger">
+            <div class="hamburger" data-aos="fade-down" data-aos-delay="1200">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
@@ -107,14 +107,14 @@
 
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
+    <section class="hero" id="hero" data-aos="fade-up">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <!-- Left Side Content (70%) -->
-            <div class="hero-left" data-aos="fade-up">
+            <div class="hero-left" data-aos="fade-up" data-aos-delay="100">
                 <h1>Streamline Your Client Validation Process</h1>
                 <p>Automate email dispatch, secure token-based form submissions, and manage client data effortlessly.</p>
-                <a href="contact.html" class="cta-button" aria-label="Contact Us" data-aos="fade-up">
+                <a href="contact.html" class="cta-button" aria-label="Contact Us" data-aos="fade-up" data-aos-delay="200">
                     <div class="svg-wrapper-1">
                         <div class="svg-wrapper">
                             <!-- Contact (Envelope) Icon -->
@@ -132,10 +132,16 @@
                     </div>
                     <span>Contact Us</span>
                 </a>
+                <!-- Added Hero Tags -->
+                <div class="hero-tags" data-aos="fade-up" data-aos-delay="300">
+                    <span>Secure.</span>
+                    <span>Efficient.</span>
+                    <span>Reliable.</span>
+                </div>
             </div>
 
             <!-- Right Side Animated Text (30%) -->
-            <div class="hero-right" data-aos="fade-up">
+            <div class="hero-right" data-aos="fade-up" data-aos-delay="400">
                 <div class="animated-text">
                     <span>Secure.</span>
                     <span>Efficient.</span>
@@ -145,42 +151,37 @@
         </div>
     </section>
 
-
-
-
-
-
     <!-- Features Section -->
     <section class="features" id="features" data-aos="fade-up">
         <div class="container">
-            <h2 data-aos="fade-up">Key Features</h2>
+            <h2 data-aos="fade-up" data-aos-delay="100">Key Features</h2>
             <div class="features-grid">
-                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="200">
                     <i class="fas fa-key"></i>
                     <h3>Secure Token Generation</h3>
                     <p>Generate unique, secure tokens for each client to ensure one-time use and enhanced security.</p>
                 </div>
-                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="300">
                     <i class="fas fa-envelope-open-text"></i>
                     <h3>Email Automation</h3>
                     <p>Send personalized validation emails automatically, reducing manual workload and errors.</p>
                 </div>
-                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="400">
                     <i class="fas fa-chart-line"></i>
                     <h3>Real-Time Analytics</h3>
                     <p>Gain actionable insights with our comprehensive analytics dashboards.</p>
                 </div>
-                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="500">
                     <i class="fas fa-cloud-upload-alt"></i>
                     <h3>File Uploads</h3>
                     <p>Allow clients to upload necessary documents securely through the form.</p>
                 </div>
-                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="600">
                     <i class="fas fa-user-check"></i>
                     <h3>Status Tracking</h3>
                     <p>Monitor the validation status of each client effortlessly within your dashboard.</p>
                 </div>
-                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="700">
                     <i class="fas fa-cogs"></i>
                     <h3>Customizable Templates</h3>
                     <p>Customize email templates to align with your brand and communication style.</p>
@@ -189,34 +190,33 @@
         </div>
     </section>
 
-
     <!-- Benefits Section -->
-    <section class="benefits" id="benefits">
+    <section class="benefits" id="benefits" data-aos="fade-up">
         <div class="container">
-            <h2 data-aos="fade-up">Why Choose Our Web App?</h2>
+            <h2 data-aos="fade-up" data-aos-delay="100">Why Choose Our Web App?</h2>
             <div class="benefits-grid">
                 <div class="benefit-item card" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-shield-alt"></i>
                     <h3>Enhanced Security</h3>
                     <p>Secure token-based authentication ensures that only authorized clients can submit forms.</p>
                 </div>
-                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="400">
+                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="300">
                     <i class="fas fa-clock"></i>
                     <h3>Time Efficiency</h3>
                     <p>Automate repetitive tasks like email dispatch and data management, freeing up your time for more important activities.</p>
                 </div>
-                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="600">
+                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="400">
                     <i class="fas fa-chart-line"></i>
                     <h3>Scalability</h3>
                     <p>Easily manage a growing number of clients without compromising on performance or security.</p>
                 </div>
-                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="800">
-                    <i class="fas fa-chart-line"></i>
+                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-plug"></i>
                     <h3>Seamless Integration</h3>
                     <p>Integrates smoothly with your existing Google Workspace tools, ensuring a unified workflow.</p>
                 </div>
-                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="1000">
-                    <i class="fas fa-chart-line"></i>
+                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-chart-pie"></i>
                     <h3>Real-Time Analytics</h3>
                     <p>Gain insights into client submissions and engagement through comprehensive analytics dashboards.</p>
                 </div>
@@ -225,34 +225,32 @@
         </div>
     </section>
 
-
-
     <!-- How It Works Section -->
-    <section class="how-it-works" id="how-it-works">
+    <section class="how-it-works" id="how-it-works" data-aos="fade-up">
         <div class="container">
-            <h2>How It Works</h2>
+            <h2 data-aos="fade-up" data-aos-delay="100">How It Works</h2>
             <div class="workflow-steps">
-                <div class="step card">
+                <div class="step card" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-upload"></i>
                     <h3>1. Upload Client List</h3>
                     <p>Import your client data seamlessly into our platform.</p>
                 </div>
-                <div class="step card">
+                <div class="step card" data-aos="fade-up" data-aos-delay="300">
                     <i class="fas fa-key"></i>
                     <h3>2. Generate Secure Tokens</h3>
                     <p>Automatically create unique tokens for each client to ensure secure form submissions.</p>
                 </div>
-                <div class="step card">
+                <div class="step card" data-aos="fade-up" data-aos-delay="400">
                     <i class="fas fa-paper-plane"></i>
                     <h3>3. Send Validation Emails</h3>
                     <p>Dispatch personalized validation emails with secure links to your clients.</p>
                 </div>
-                <div class="step card">
+                <div class="step card" data-aos="fade-up" data-aos-delay="500">
                     <i class="fas fa-tasks"></i>
                     <h3>4. Manage Submissions</h3>
                     <p>Track and manage client submissions through an intuitive dashboard.</p>
                 </div>
-                <div class="step card">
+                <div class="step card" data-aos="fade-up" data-aos-delay="600">
                     <i class="fas fa-chart-pie"></i>
                     <h3>5. Analyze Data</h3>
                     <p>Gain actionable insights with our real-time analytics and reporting tools.</p>
@@ -262,16 +260,16 @@
     </section>
 
     <!-- Demo Section -->
-    <section class="demo" id="demo">
+    <section class="demo" id="demo" data-aos="fade-up">
         <div class="container">
-            <h2>See It In Action</h2>
+            <h2 data-aos="fade-up" data-aos-delay="100">See It In Action</h2>
             <div class="demo-content">
-                <div class="screenshots">
+                <div class="screenshots" data-aos="fade-up" data-aos-delay="200">
                     <img src="https://via.placeholder.com/300x200" alt="Dashboard Overview" loading="lazy">
                     <img src="https://via.placeholder.com/300x200" alt="Email Automation Interface" loading="lazy">
                     <img src="https://via.placeholder.com/300x200" alt="Form Submission Management" loading="lazy">
                 </div>
-                <div class="video-demo">
+                <div class="video-demo" data-aos="fade-up" data-aos-delay="300">
                     <h3>Watch Our Demo</h3>
                     <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Demo Video" allowfullscreen></iframe>
                 </div>
@@ -280,21 +278,21 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
+    <section class="testimonials" id="testimonials" data-aos="fade-up">
         <div class="container">
-            <h2>What Our Clients Say</h2>
+            <h2 data-aos="fade-up" data-aos-delay="100">What Our Clients Say</h2>
             <div class="testimonial-grid">
-                <div class="testimonial card">
+                <div class="testimonial card" data-aos="zoom-in" data-aos-delay="200">
                     <p>"This web app has revolutionized our client validation process. It's secure, efficient, and incredibly user-friendly."</p>
                     <h4>John Doe</h4>
                     <span>Marketing Manager, ABC Corp</span>
                 </div>
-                <div class="testimonial card">
+                <div class="testimonial card" data-aos="zoom-in" data-aos-delay="300">
                     <p>"Automating our email dispatch and form submissions has saved us countless hours. Highly recommend to any business looking to streamline operations."</p>
                     <h4>Jane Smith</h4>
                     <span>Operations Lead, XYZ Ltd</span>
                 </div>
-                <div class="testimonial card">
+                <div class="testimonial card" data-aos="zoom-in" data-aos-delay="400">
                     <p>"The real-time analytics provided by this app have given us valuable insights into our client interactions. A must-have tool for any organization."</p>
                     <h4>Emily Johnson</h4>
                     <span>Data Analyst, LMN Inc</span>
@@ -304,11 +302,11 @@
     </section>
 
     <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
+    <section class="pricing" id="pricing" data-aos="fade-up">
         <div class="container">
-            <h2>Choose Your Plan</h2>
+            <h2 data-aos="fade-up" data-aos-delay="100">Choose Your Plan</h2>
             <div class="pricing-plans">
-                <div class="plan card">
+                <div class="plan card" data-aos="zoom-in" data-aos-delay="200">
                     <h3>Basic</h3>
                     <p class="price">$29/month</p>
                     <ul>
@@ -317,7 +315,7 @@
                         <li>Email Automation</li>
                         <li>Basic Reporting</li>
                     </ul>
-                    <a href="contact.html" class="cta-button">
+                    <a href="contact.html" class="cta-button" data-aos="fade-up" data-aos-delay="300">
                         <div class="svg-wrapper-1">
                             <div class="svg-wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -333,7 +331,7 @@
                         <span>Send</span>
                     </a>
                 </div>
-                <div class="plan featured card">
+                <div class="plan featured card" data-aos="zoom-in" data-aos-delay="300">
                     <h3>Pro</h3>
                     <p class="price">$59/month</p>
                     <ul>
@@ -343,7 +341,7 @@
                         <li>Detailed Analytics</li>
                         <li>Priority Support</li>
                     </ul>
-                    <a href="contact.html" class="cta-button">
+                    <a href="contact.html" class="cta-button" data-aos="fade-up" data-aos-delay="400">
                         <div class="svg-wrapper-1">
                             <div class="svg-wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -359,7 +357,7 @@
                         <span>Send</span>
                     </a>
                 </div>
-                <div class="plan card">
+                <div class="plan card" data-aos="zoom-in" data-aos-delay="400">
                     <h3>Enterprise</h3>
                     <p class="price">Contact Us</p>
                     <ul>
@@ -369,7 +367,7 @@
                         <li>Enhanced Security Features</li>
                         <li>24/7 Support</li>
                     </ul>
-                    <a href="contact.html" class="cta-button">
+                    <a href="contact.html" class="cta-button" data-aos="fade-up" data-aos-delay="500">
                         <div class="svg-wrapper-1">
                             <div class="svg-wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -390,26 +388,26 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq" id="faq">
+    <section class="faq" id="faq" data-aos="fade-up">
         <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
+            <h2 data-aos="fade-up" data-aos-delay="100">Frequently Asked Questions</h2>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
                 <h4>How secure are the tokens generated by your web app?</h4>
                 <p>Our tokens are generated using industry-standard UUIDs and are encrypted to ensure maximum security.</p>
             </div>
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <h4>Can I customize the email templates?</h4>
                 <p>Yes, our platform allows you to fully customize email templates to match your brand and communication style.</p>
             </div>
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
                 <h4>What payment methods do you accept?</h4>
                 <p>We accept all major credit cards, including Visa, MasterCard, American Express, and more through Stripe Checkout.</p>
             </div>
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
                 <h4>Is there a free trial available?</h4>
                 <p>Yes, we offer a 14-day free trial for our Pro plan. You can upgrade or cancel at any time.</p>
             </div>
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
                 <h4>How do I get support if I encounter issues?</h4>
                 <p>Our dedicated support team is available 24/7 via email and live chat to assist you with any issues or questions.</p>
             </div>
@@ -418,11 +416,11 @@
     </section>
 
     <!-- Call to Action Section -->
-    <section class="cta" id="cta">
+    <section class="cta" id="cta" data-aos="fade-up">
         <div class="container">
-            <h2>Ready to Transform Your Client Validation Process?</h2>
-            <p>Join hundreds of satisfied clients who have streamlined their operations with our web app.</p>
-            <a href="contact.html" class="cta-button">
+            <h2 data-aos="fade-up" data-aos-delay="100">Ready to Transform Your Client Validation Process?</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Join hundreds of satisfied clients who have streamlined their operations with our web app.</p>
+            <a href="contact.html" class="cta-button" data-aos="fade-up" data-aos-delay="300">
                 <div class="svg-wrapper-1">
                     <div class="svg-wrapper">
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -441,40 +439,40 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container footer-content">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
                 <h4>Contact Us</h4>
                 <p>Email: support@s2spixel.com</p>
                 <p>Phone: +91 9891172772</p>
                 <p>Address: Sector 15A, Faridabad, India</p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
                 <h4>Follow Us</h4>
                 <div class="social-media">
-                    <a href="https://www.linkedin.com/company/s2spixel/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/people/s2spixel/100086972582627/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com/s2spixel" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/s2spixel" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/s2spixel/" target="_blank" aria-label="LinkedIn" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/people/s2spixel/100086972582627/" target="_blank" aria-label="Facebook" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/s2spixel" target="_blank" aria-label="Twitter" data-aos="fade-up" data-aos-delay="500"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/s2spixel" target="_blank" aria-label="Instagram" data-aos="fade-up" data-aos-delay="600"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="700">
                 <h4>Quick Links</h4>
                 <div class="quick-links">
-                    <a href="#features">Features</a>
-                    <a href="#benefits">Benefits</a>
-                    <a href="#how-it-works">How It Works</a>
-                    <a href="#demo">Demo</a>
-                    <a href="#testimonials">Testimonials</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#faq">FAQ</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="#features" data-aos="fade-up" data-aos-delay="800">Features</a>
+                    <a href="#benefits" data-aos="fade-up" data-aos-delay="900">Benefits</a>
+                    <a href="#how-it-works" data-aos="fade-up" data-aos-delay="1000">How It Works</a>
+                    <a href="#demo" data-aos="fade-up" data-aos-delay="1100">Demo</a>
+                    <a href="#testimonials" data-aos="fade-up" data-aos-delay="1200">Testimonials</a>
+                    <a href="#pricing" data-aos="fade-up" data-aos-delay="1300">Pricing</a>
+                    <a href="#faq" data-aos="fade-up" data-aos-delay="1400">FAQ</a>
+                    <a href="contact.html" data-aos="fade-up" data-aos-delay="1500">Contact</a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom" data-aos="fade-up" data-aos-delay="1600">
             <p>&copy; 2024 S2SPixel. All rights reserved.</p>
-            <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a></p>
+            <p><a href="#privacy-policy" data-aos="fade-up" data-aos-delay="1700">Privacy Policy</a> | <a href="#terms-of-service" data-aos="fade-up" data-aos-delay="1800">Terms of Service</a></p>
         </div>
     </footer>
 
@@ -494,8 +492,9 @@
     <!-- Initialize AOS -->
     <script>
         AOS.init({
-            duration: 1000, // Animation duration
+            duration: 1000, // Animation duration in ms
             once: true,     // Whether animation should happen only once
+            easing: 'ease-in-out', // Easing function
         });
     </script>
 

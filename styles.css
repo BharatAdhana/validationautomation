@@ -488,6 +488,7 @@ body.dark-theme .hero {
     overflow: hidden;
     transition: all 0.2s;
     cursor: pointer;
+    position: relative;
     text-decoration: none; /* Removes underline for <a> tags */
     max-width: 200px; /* Optional: Limit maximum width */
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Glow effect */
@@ -1501,4 +1502,3 @@ html {
         border-color: #ffffff;
         transform: translate(-50%, -50%) scale(2);
     }
-
