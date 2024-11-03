@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>S2SPixel Client Validation App</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <!-- Light Mode Logo (Black) -->
+                    <img src="https://s2spixel.com/assets/images/logo.png" alt="S2SPixel Logo" class="logo-light" aria-hidden="false">
+                    <!-- Dark Mode Logo (White) -->
+                    <img src="S2SPixel-logo-white.png" alt="S2SPixel Logo" class="logo-dark" aria-hidden="true">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Theme Toggle Button -->
+            <label id="theme-toggle-button" aria-label="Toggle Dark Mode">
+                <input type="checkbox" id="toggle">
+                <svg viewBox="0 0 69.667 44" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(3.5 3.5)" data-name="Component 15 – 1" id="Component_15_1">
+                        <!-- Container -->
+                        <g filter="url(#container)" transform="matrix(1, 0, 0, 1, -3.5, -3.5)">
+                            <rect fill="#FFD700" transform="translate(3.5 3.5)" rx="17.5" height="35" width="60.667" data-name="container" id="container"></rect>
+                        </g>
+
+                        <!-- Button -->
+                        <g transform="translate(2.333 2.333)" id="button">
+                            <!-- Sun Icon -->
+                            <g data-name="sun" id="sun">
+                                <g filter="url(#sun-outer)" transform="matrix(1, 0, 0, 1, -5.83, -5.83)">
+                                    <circle fill="#f8e664" transform="translate(5.83 5.83)" r="15.167" cy="15.167" cx="15.167" data-name="sun-outer" id="sun-outer-2"></circle>
+                                </g>
+                                <g filter="url(#sun)" transform="matrix(1, 0, 0, 1, -5.83, -5.83)">
+                                    <path fill="rgba(246,254,247,0.29)" transform="translate(9.33 9.33)" d="M11.667,0A11.667,11.667,0,1,1,0,11.667,11.667,11.667,0,0,1,11.667,0Z" data-name="sun" id="sun-3"></path>
+                                </g>
+                                <circle fill="#fcf4b9" transform="translate(8.167 8.167)" r="7" cy="7" cx="7" id="sun-inner"></circle>
+                            </g>
+
+                            <!-- Moon Icon -->
+                            <g data-name="moon" id="moon">
+                                <g filter="url(#moon)" transform="matrix(1, 0, 0, 1, -31.5, -5.83)">
+                                    <circle fill="#cce6ee" transform="translate(31.5 5.83)" r="15.167" cy="15.167" cx="15.167" data-name="moon" id="moon-3"></circle>
+                                </g>
+                                <g fill="#a6cad0" transform="translate(-24.415 -1.009)" id="patches">
+                                    <circle transform="translate(43.009 4.496)" r="2" cy="2" cx="2"></circle>
+                                    <circle transform="translate(39.366 17.952)" r="2" cy="2" cx="2" data-name="patch"></circle>
+                                    <circle transform="translate(33.016 8.044)" r="1" cy="1" cx="1" data-name="patch"></circle>
+                                    <circle transform="translate(51.081 18.888)" r="1" cy="1" cx="1" data-name="patch"></circle>
+                                    <circle transform="translate(33.016 22.503)" r="1" cy="1" cx="1" data-name="patch"></circle>
+                                    <circle transform="translate(50.081 10.53)" r="1.5" cy="1.5" cx="1.5" data-name="patch"></circle>
+                                </g>
+                            </g>
+                        </g>
+
+                        <!-- Cloud and Stars -->
+                        <g filter="url(#cloud)" transform="matrix(1, 0, 0, 1, -3.5, -3.5)">
+                            <path fill="#fff" transform="translate(-3466.47 -160.94)" d="M3512.81,173.815a4.463,4.463,0,0,1,2.243.62.95.95,0,0,1,.72-1.281,4.852,4.852,0,0,1,2.623.519c.034.02-.5-1.968.281-2.716a2.117,2.117,0,0,1,2.829-.274,1.821,1.821,0,0,1,.854,1.858c.063.037,2.594-.049,3.285,1.273s-.865,2.544-.807,2.626a12.192,12.192,0,0,1,2.278.892c.553.448,1.106,1.992-1.62,2.927a7.742,7.742,0,0,1-3.762-.3c-1.28-.49-1.181-2.65-1.137-2.624s-1.417,2.2-2.623,2.2a4.172,4.172,0,0,1-2.394-1.206,3.825,3.825,0,0,1-2.771.774c-3.429-.46-2.333-3.267-2.2-3.55A3.721,3.721,0,0,1,3512.81,173.815Z" data-name="cloud" id="cloud"></path>
+                        </g>
+
+                        <g fill="#def8ff" transform="translate(3.585 1.325)" id="stars">
+                            <path transform="matrix(-1, 0.017, -0.017, -1, 24.231, 3.055)" d="M.774,0,.566.559,0,.539.458.933.25,1.492l.485-.361.458.394L1.024.953,1.509.592.943.572Z"></path>
+                            <path transform="matrix(-0.777, 0.629, -0.629, -0.777, 23.185, 12.358)" d="M1.341.529.836.472.736,0,.505.46,0,.4.4.729l-.231.46L.605.932l.4.326L.9.786Z" data-name="star"></path>
+                            <path transform="matrix(0.438, 0.899, -0.899, 0.438, 23.177, 29.735)" d="M.015,1.065.475.9l.285.365L.766.772l.46-.164L.745.494.751,0,.481.407,0,.293.285.658Z" data-name="star"></path>
+                            <path transform="translate(12.677 0.388) rotate(104)" d="M1.161,1.6,1.059,1,1.574.722.962.607.86,0,.613.572,0,.457.446.881.2,1.454l.516-.274Z" data-name="star"></path>
+                            <path transform="matrix(-0.07, 0.998, -0.998, -0.07, 11.066, 15.457)" d="M.873,1.648l.114-.62L1.579.945,1.03.62,1.144,0,.706.464.157.139.438.7,0,1.167l.592-.083Z" data-name="star"></path>
+                            <path transform="translate(8.326 28.061) rotate(11)" d="M.593,0,.638.724,0,.982l.7.211.045.724.36-.64.7.211L1.342.935,1.7.294,1.063.552Z" data-name="star"></path>
+                            <path transform="translate(5.012 5.962) rotate(172)" d="M.816,0,.5.455,0,.311.323.767l-.312.455.516-.215.323.456L.827.911,1.343.7.839.552Z" data-name="star"></path>
+                            <path transform="translate(2.218 14.616) rotate(169)" d="M1.261,0,.774.571.114.3.487.967,0,1.538.728,1.32l.372.662.047-.749.728-.218L1.215.749Z" data-name="star"></path>
+                        </g>
+                    </g>
+                </svg>
+            </label>
+
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <!-- Left Side Content (70%) -->
+            <div class="hero-left" data-aos="fade-up">
+                <h1>Streamline Your Client Validation Process</h1>
+                <p>Automate email dispatch, secure token-based form submissions, and manage client data effortlessly.</p>
+                <a href="contact.html" class="cta-button" aria-label="Contact Us" data-aos="fade-up">
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <!-- Contact (Envelope) Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 24 24"
+                                 width="24"
+                                 height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="currentColor"
+                                      d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2
+                                2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0
+                                4l-8 5-8-5V6l8 5 8-5v2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>Contact Us</span>
+                </a>
+            </div>
+
+            <!-- Right Side Animated Text (30%) -->
+            <div class="hero-right" data-aos="fade-up">
+                <div class="animated-text">
+                    <span>Secure.</span>
+                    <span>Efficient.</span>
+                    <span>Reliable.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Features Section -->
+    <section class="features" id="features" data-aos="fade-up">
+        <div class="container">
+            <h2 data-aos="fade-up">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-key"></i>
+                    <h3>Secure Token Generation</h3>
+                    <p>Generate unique, secure tokens for each client to ensure one-time use and enhanced security.</p>
+                </div>
+                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h3>Email Automation</h3>
+                    <p>Send personalized validation emails automatically, reducing manual workload and errors.</p>
+                </div>
+                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Real-Time Analytics</h3>
+                    <p>Gain actionable insights with our comprehensive analytics dashboards.</p>
+                </div>
+                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>File Uploads</h3>
+                    <p>Allow clients to upload necessary documents securely through the form.</p>
+                </div>
+                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Status Tracking</h3>
+                    <p>Monitor the validation status of each client effortlessly within your dashboard.</p>
+                </div>
+                <div class="feature-item card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Customizable Templates</h3>
+                    <p>Customize email templates to align with your brand and communication style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2 data-aos="fade-up">Why Choose Our Web App?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Enhanced Security</h3>
+                    <p>Secure token-based authentication ensures that only authorized clients can submit forms.</p>
+                </div>
+                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-clock"></i>
+                    <h3>Time Efficiency</h3>
+                    <p>Automate repetitive tasks like email dispatch and data management, freeing up your time for more important activities.</p>
+                </div>
+                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Scalability</h3>
+                    <p>Easily manage a growing number of clients without compromising on performance or security.</p>
+                </div>
+                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="800">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Seamless Integration</h3>
+                    <p>Integrates smoothly with your existing Google Workspace tools, ensuring a unified workflow.</p>
+                </div>
+                <div class="benefit-item card" data-aos="fade-up" data-aos-delay="1000">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Real-Time Analytics</h3>
+                    <p>Gain insights into client submissions and engagement through comprehensive analytics dashboards.</p>
+                </div>
+                <!-- Add more benefit items as needed -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="workflow-steps">
+                <div class="step card">
+                    <i class="fas fa-upload"></i>
+                    <h3>1. Upload Client List</h3>
+                    <p>Import your client data seamlessly into our platform.</p>
+                </div>
+                <div class="step card">
+                    <i class="fas fa-key"></i>
+                    <h3>2. Generate Secure Tokens</h3>
+                    <p>Automatically create unique tokens for each client to ensure secure form submissions.</p>
+                </div>
+                <div class="step card">
+                    <i class="fas fa-paper-plane"></i>
+                    <h3>3. Send Validation Emails</h3>
+                    <p>Dispatch personalized validation emails with secure links to your clients.</p>
+                </div>
+                <div class="step card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>4. Manage Submissions</h3>
+                    <p>Track and manage client submissions through an intuitive dashboard.</p>
+                </div>
+                <div class="step card">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>5. Analyze Data</h3>
+                    <p>Gain actionable insights with our real-time analytics and reporting tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <h2>See It In Action</h2>
+            <div class="demo-content">
+                <div class="screenshots">
+                    <img src="https://via.placeholder.com/300x200" alt="Dashboard Overview" loading="lazy">
+                    <img src="https://via.placeholder.com/300x200" alt="Email Automation Interface" loading="lazy">
+                    <img src="https://via.placeholder.com/300x200" alt="Form Submission Management" loading="lazy">
+                </div>
+                <div class="video-demo">
+                    <h3>Watch Our Demo</h3>
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Demo Video" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial card">
+                    <p>"This web app has revolutionized our client validation process. It's secure, efficient, and incredibly user-friendly."</p>
+                    <h4>John Doe</h4>
+                    <span>Marketing Manager, ABC Corp</span>
+                </div>
+                <div class="testimonial card">
+                    <p>"Automating our email dispatch and form submissions has saved us countless hours. Highly recommend to any business looking to streamline operations."</p>
+                    <h4>Jane Smith</h4>
+                    <span>Operations Lead, XYZ Ltd</span>
+                </div>
+                <div class="testimonial card">
+                    <p>"The real-time analytics provided by this app have given us valuable insights into our client interactions. A must-have tool for any organization."</p>
+                    <h4>Emily Johnson</h4>
+                    <span>Data Analyst, LMN Inc</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Choose Your Plan</h2>
+            <div class="pricing-plans">
+                <div class="plan card">
+                    <h3>Basic</h3>
+                    <p class="price">$29/month</p>
+                    <ul>
+                        <li>Up to 100 Clients</li>
+                        <li>Automatic Token Generation</li>
+                        <li>Email Automation</li>
+                        <li>Basic Reporting</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 24 24"
+                                     width="24"
+                                     height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>Send</span>
+                    </a>
+                </div>
+                <div class="plan featured card">
+                    <h3>Pro</h3>
+                    <p class="price">$59/month</p>
+                    <ul>
+                        <li>Up to 500 Clients</li>
+                        <li>Advanced Token Security</li>
+                        <li>Custom Email Templates</li>
+                        <li>Detailed Analytics</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 24 24"
+                                     width="24"
+                                     height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>Send</span>
+                    </a>
+                </div>
+                <div class="plan card">
+                    <h3>Enterprise</h3>
+                    <p class="price">Contact Us</p>
+                    <ul>
+                        <li>Unlimited Clients</li>
+                        <li>Dedicated Account Manager</li>
+                        <li>Custom Integrations</li>
+                        <li>Enhanced Security Features</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 24 24"
+                                     width="24"
+                                     height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>Send</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h4>How secure are the tokens generated by your web app?</h4>
+                <p>Our tokens are generated using industry-standard UUIDs and are encrypted to ensure maximum security.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can I customize the email templates?</h4>
+                <p>Yes, our platform allows you to fully customize email templates to match your brand and communication style.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What payment methods do you accept?</h4>
+                <p>We accept all major credit cards, including Visa, MasterCard, American Express, and more through Stripe Checkout.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is there a free trial available?</h4>
+                <p>Yes, we offer a 14-day free trial for our Pro plan. You can upgrade or cancel at any time.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How do I get support if I encounter issues?</h4>
+                <p>Our dedicated support team is available 24/7 via email and live chat to assist you with any issues or questions.</p>
+            </div>
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Client Validation Process?</h2>
+            <p>Join hundreds of satisfied clients who have streamlined their operations with our web app.</p>
+            <a href="contact.html" class="cta-button">
+                <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24"
+                             width="24"
+                             height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor"
+                                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <span>Send</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <h4>Contact Us</h4>
+                <p>Email: support@s2spixel.com</p>
+                <p>Phone: +91 9891172772</p>
+                <p>Address: Sector 15A, Faridabad, India</p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/company/s2spixel/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/people/s2spixel/100086972582627/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/s2spixel" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/s2spixel" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <div class="quick-links">
+                    <a href="#features">Features</a>
+                    <a href="#benefits">Benefits</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 S2SPixel. All rights reserved.</p>
+            <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- GSAP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Vanta.js for Mouse Animations (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.waves.min.js"></script>
+
+    <!-- JavaScript File -->
+    <script src="scripts.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration
+            once: true,     // Whether animation should happen only once
+        });
+    </script>
+
+</body>
+</html>
